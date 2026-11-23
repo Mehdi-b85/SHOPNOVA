@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_Q_900OckEfGtPOI9JAgAnQ" name="caisse" id="_Q_mocOckEfGtPOI9JAgAnQ" dataPackage="_RAJbAOckEfGtPOI9JAgAnQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/DPQL5806/Documents/module2_sources_brutes/module2_sources_brutes/caisses/caisses_M01_20260301.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_RAJbAOckEfGtPOI9JAgAnQ" name="default" dataManager="_Q_900OckEfGtPOI9JAgAnQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_RAJbAeckEfGtPOI9JAgAnQ" id="_8kLGEOcjEfGtPOI9JAgAnQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_RAJbAuckEfGtPOI9JAgAnQ" label="magasin_id" length="-1" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_RAJbA-ckEfGtPOI9JAgAnQ" label="nom" length="29" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_RAJbBOckEfGtPOI9JAgAnQ" label="type" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_RAJbBeckEfGtPOI9JAgAnQ" label="ville" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_RAJbBuckEfGtPOI9JAgAnQ" label="region" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_RAJbB-ckEfGtPOI9JAgAnQ" label="surface_m2" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_RAJbCOckEfGtPOI9JAgAnQ" label="date_ouverture" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

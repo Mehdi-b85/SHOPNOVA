@@ -25,4 +25,19 @@
     "version" : "Latest",
     "type" : "routine"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_kDsHMOQgEfGtPOI9JAgAnQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_tXrNQOdQEfGiX5Aaf51uAA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_tXrNQOdQEfGiX5Aaf51uAA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
