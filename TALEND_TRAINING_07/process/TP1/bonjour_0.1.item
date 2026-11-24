@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="cnx_snowflake_account" prompt="cnx_snowflake_account?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_String" value="BYSAHYD-WJ75547" internalId="_goMF0OfzEfGiX5Aaf51uAA"/>
+    <contextParameter comment="" name="cnx_snowflake_database" prompt="cnx_snowflake_database?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_String" value="TALEND_TRAINING" internalId="_goMF0efzEfGiX5Aaf51uAA"/>
+    <contextParameter comment="" name="cnx_snowflake_dbSchema" prompt="cnx_snowflake_dbSchema?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_String" value="SQL_TRAINING" internalId="_goMF0ufzEfGiX5Aaf51uAA"/>
+    <contextParameter comment="" name="cnx_snowflake_jdbcParameters" prompt="cnx_snowflake_jdbcParameters?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_String" value="" internalId="_goMF0-fzEfGiX5Aaf51uAA"/>
+    <contextParameter comment="" name="cnx_snowflake_userId" prompt="cnx_snowflake_userId?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_String" value="MBOUAB" internalId="_goMF1OfzEfGiX5Aaf51uAA"/>
+    <contextParameter comment="" name="cnx_snowflake_warehouse" prompt="cnx_snowflake_warehouse?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_String" value="" internalId="_goMF1efzEfGiX5Aaf51uAA"/>
+    <contextParameter comment="" name="cnx_snowflake_role" prompt="cnx_snowflake_role?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_String" value="" internalId="_goMF1ufzEfGiX5Aaf51uAA"/>
+    <contextParameter comment="" name="cnx_snowflake_jdbcUrlSuffix" prompt="cnx_snowflake_jdbcUrlSuffix?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_String" value=".snowflakecomputing.com" internalId="_goNT8OfzEfGiX5Aaf51uAA"/>
+    <contextParameter comment="" name="cnx_snowflake_loginTimeout" prompt="cnx_snowflake_loginTimeout?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_String" value="15" internalId="_goNT8efzEfGiX5Aaf51uAA"/>
+    <contextParameter comment="" name="cnx_snowflake_password" prompt="cnx_snowflake_password?" promptNeeded="false" repositoryContextId="_efALwOfzEfGiX5Aaf51uAA" type="id_Password" value="enc:system.encryption.key.v1:/gLRW4WHB4BmGJuOfduPqTuzeNibngTLJezkwXL3NSYtspxljERguM4U" internalId="_goNT8ufzEfGiX5Aaf51uAA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -267,7 +278,7 @@
       <column comment="" key="false" length="-1" name="charger_le" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="SortieValide">
         <mapperTableEntries name="ticket_id" expression="Long.valueOf(row1.ticket_id)" type="id_Long" nullable="true"/>
@@ -404,25 +415,25 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="test connexion"/>
-    <elementParameter field="TEXT" name="configuration.account" value="&quot;BYSAHYD-WJ75547&quot;"/>
+    <elementParameter field="TEXT" name="configuration.account" value="context.cnx_snowflake_account"/>
     <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.authenticationType" value="BASIC"/>
-    <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="&quot;MBOUAB&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="enc:system.encryption.key.v1:s1bDH3nMlgiw8uq1SqEJ5xT5JRGYBA28PW/kn9uj1CfzN+vtzoAhnBj3Y5k="/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="context.cnx_snowflake_userId"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="context.cnx_snowflake_password"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.keyAlias" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthTokenEndpoint" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.clientId" value="&quot;&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthUsername" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.scope" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="configuration.warehouse" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dbSchema" value="&quot;SQL_TRAINING&quot;"/>
-    <elementParameter field="TEXT" name="configuration.database" value="&quot;TALEND_TRAINING&quot;"/>
+    <elementParameter field="TEXT" name="configuration.warehouse" value="context.cnx_snowflake_warehouse"/>
+    <elementParameter field="TEXT" name="configuration.dbSchema" value="context.cnx_snowflake_dbSchema"/>
+    <elementParameter field="TEXT" name="configuration.database" value="context.cnx_snowflake_database"/>
     <elementParameter field="CHECK" name="configuration.shareConnection" value="false"/>
     <elementParameter field="CHECK" name="configuration.autoCommit" value="true"/>
-    <elementParameter field="TEXT" name="configuration.jdbcParameters" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="configuration.loginTimeout" value="15"/>
-    <elementParameter field="TEXT" name="configuration.role" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
+    <elementParameter field="TEXT" name="configuration.jdbcParameters" value="context.cnx_snowflake_jdbcParameters"/>
+    <elementParameter field="TEXT" name="configuration.loginTimeout" value="context.cnx_snowflake_loginTimeout"/>
+    <elementParameter field="TEXT" name="configuration.role" value="context.cnx_snowflake_role"/>
+    <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="context.cnx_snowflake_jdbcUrlSuffix"/>
     <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
     <elementParameter field="TEXT" name="___TACOKIT_COMPONENT_PLUGIN_NAME___" value="snowflake" show="false"/>
     <metadata connector="FLOW" name="tDBConnection_1"/>

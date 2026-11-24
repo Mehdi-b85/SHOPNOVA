@@ -1,0 +1,38 @@
+{
+  "itemId" : "_iOmWIOdHEfGiX5Aaf51uAA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_efALwOfzEfGiX5Aaf51uAA",
+    "parameterList" : [ {
+      "id" : "_efTGsefzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_account"
+    }, {
+      "id" : "_efTGsufzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_database"
+    }, {
+      "id" : "_efTGs-fzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_dbSchema"
+    }, {
+      "id" : "_efTGtOfzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_jdbcParameters"
+    }, {
+      "id" : "_efTGtefzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_userId"
+    }, {
+      "id" : "_efTGtufzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_warehouse"
+    }, {
+      "id" : "_efTGt-fzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_role"
+    }, {
+      "id" : "_efTGuOfzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_jdbcUrlSuffix"
+    }, {
+      "id" : "_efTGuefzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_loginTimeout"
+    }, {
+      "id" : "_efTGuufzEfGiX5Aaf51uAA",
+      "name" : "cnx_snowflake_password"
+    } ]
+  } ]
+}
