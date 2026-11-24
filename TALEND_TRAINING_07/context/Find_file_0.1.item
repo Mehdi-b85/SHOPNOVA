@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_PInggOgHEfGiX5Aaf51uAA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_B_l38OgLEfGiX5Aaf51uAA" comment="" name="directory_file" prompt="directory_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>
